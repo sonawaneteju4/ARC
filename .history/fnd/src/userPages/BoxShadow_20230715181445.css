@@ -1,0 +1,6 @@
+.imgShadow{
+    filter: drop-shadow(10px 10px 10px rgb(2, 20, 27));
+}
+.hover:imgShadow{
+    filter: drop-shadow(10px 10px 10px rgb(2, , 27));
+}
