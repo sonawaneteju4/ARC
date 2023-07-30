@@ -4,7 +4,6 @@ import ButtonGroup from "@mui/material/ButtonGroup";
 import { Link } from "react-router-dom";
 import Spinner from "../component/Spinner";
 import ModalImg from '../Pages/ModalImg'
-import InstaEmb from "./InstaEmb";
 
 const API = `${process.env.REACT_APP_BASE_API}/gallery/getimages`;
 const Gallery = () => {
@@ -43,7 +42,7 @@ const Gallery = () => {
       </div>
       {loading && <Spinner />}
       <>
-      <InstaEmb/>
+      <I
       </>
       <div className="grid lg:grid-cols-4 grid-cols-2 gap-4 mt-5 items-center">
         {gallery.map((items) => (

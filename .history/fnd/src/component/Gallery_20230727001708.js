@@ -4,7 +4,6 @@ import ButtonGroup from "@mui/material/ButtonGroup";
 import { Link } from "react-router-dom";
 import Spinner from "../component/Spinner";
 import ModalImg from '../Pages/ModalImg'
-import InstaEmb from "./InstaEmb";
 
 const API = `${process.env.REACT_APP_BASE_API}/gallery/getimages`;
 const Gallery = () => {
@@ -42,10 +41,15 @@ const Gallery = () => {
         </ButtonGroup>
       </div>
       {loading && <Spinner />}
-      <>
-      <InstaEmb/>
-      </>
       <div className="grid lg:grid-cols-4 grid-cols-2 gap-4 mt-5 items-center">
+      <div className="m-2" key={items._id}>
+            <img
+              src={items.link}
+              alt={items.title}
+              className=" rounded hover:contrast-50"
+              onClick={() => setshowMoadl(true)}
+            ></img>
+          <div>
         {gallery.map((items) => (
           <div className="m-2" key={items._id}>
             <img
