@@ -1,0 +1,35 @@
+import React from "react";
+import BillComp from "./BillComp";
+import ProductOrderTable from "./ProductOrderTable";
+
+const SideBar = () => {
+  return (
+    <>
+      {/* Side Bar Bill Section  */}
+      <div className="pt-5  flex justify-center">
+        {/* Current Open Bills */}
+        <div>
+          <BillComp />
+          <BillComp />
+          <BillComp />
+        </div>
+        <div>
+          <BillComp />
+        </div>
+      </div>
+      <div className="flex justify-center">
+        <button className=" bg-black text-blue-50 px-2 m-2 rounded-xl">
+          Open Bill More{" "}
+        </button>
+      </div>
+      <hr />
+
+
+      <div>
+      <ProductOrderTable/>
+      </div>
+    </>
+  );
+};
+
+export default SideBar;

@@ -25,7 +25,8 @@ import AdminIndex from "./admin/AdminIndex";
 import AdminNav from "./admin/AdminNav";
 import Order from "./Pages/Order";
 import OrderHistory from "./Pages/OrderHistory";
-import AdminLogin from "./admin/AdminLogin";
+import AdminLogin from "./admin/LoginPage/AdminLogin";
+import HandleUpload from "./Pages/HandleUpload";
 
 const CustomNavbar = () => {
   const location = useLocation();
@@ -60,6 +61,7 @@ function App() {
             <Route exact path="/*" element={<NotFound />}></Route>
             <Route path="/order/:orderId" element={<Order/>} />
             <Route path="/orderhistory" element={<OrderHistory/>} />
+            <Route path="/adminLogin" element={<AdminLogin/>} />
             <Route
               exact
               path="/oops404PageNotFound!"
@@ -74,7 +76,7 @@ function App() {
             <Route path="/" element={<Index />}></Route>
             <Route path="/home" element={<Index />}></Route>
             <Route exact path="/services" element={<Services />}></Route>
-            <Route exact path="/blogs" element={<Testpage />}></Route>
+            <Route exact path="/blogs" element={<HandleUpload />}></Route>
             <Route exact path="/contactus" element={<ContactUs />}></Route>
             <Route exact path="/login" element={<Login />}></Route>
             <Route exact path="/cart" element={<Cart />}></Route>

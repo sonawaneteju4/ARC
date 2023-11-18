@@ -1,0 +1,21 @@
+.active{
+    color: royalblue;
+}
+.sidebar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 100%;
+    z-index: 40;
+    width: 40%;
+    height: 100%;
+    padding: 20px;
+    background-color: white;
+    transition: left 0.3s ease-in-out;
+  }
+  
+  .sidebar.active {
+    left: 60%; /* Adjust this value as per your desired open width */
+  }
+  
+  
