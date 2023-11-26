@@ -42,13 +42,13 @@ const Product = () => {
     }
   };
   
-  
+
   useEffect(() => {
+    const { category } = useParams();
     let url = API;
     if (category || category === "") {
       url += `?category=${category}`;
     }
-    
     if (sortType === "priceAsc") {
       url += "&sort=price";
     } else if (sortType === "priceDesc") {
@@ -61,7 +61,7 @@ const Product = () => {
     }
     fetchData(url);
   }, [category, sortType, searchTerm]);
-  
+
   const handleSortChange = (event) => {
     setSortType(event.target.value);
   };

@@ -48,7 +48,6 @@ const Product = () => {
     if (category || category === "") {
       url += `?category=${category}`;
     }
-    
     if (sortType === "priceAsc") {
       url += "&sort=price";
     } else if (sortType === "priceDesc") {
@@ -62,6 +61,7 @@ const Product = () => {
     fetchData(url);
   }, [category, sortType, searchTerm]);
   
+  const catLink = useParams();
   const handleSortChange = (event) => {
     setSortType(event.target.value);
   };

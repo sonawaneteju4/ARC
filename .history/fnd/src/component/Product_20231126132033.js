@@ -6,7 +6,7 @@ import MenuItem from "@mui/material/MenuItem";
 import FormControl from "@mui/material/FormControl";
 import Select, { SelectChangeEvent } from "@mui/material/Select";
 import ProductView from "../Pages/ProductView";
-import { useNavigate, useParams } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import { useFilterContext } from "../context/FilterContext";
 import ProductElem from "../Pages/ProductElem";
 import Spinner from "./Spinner";
@@ -42,13 +42,13 @@ const Product = () => {
     }
   };
   
-  
+
   useEffect(() => {
+    const { category } = useParams();
     let url = API;
     if (category || category === "") {
       url += `?category=${category}`;
     }
-    
     if (sortType === "priceAsc") {
       url += "&sort=price";
     } else if (sortType === "priceDesc") {
@@ -61,7 +61,7 @@ const Product = () => {
     }
     fetchData(url);
   }, [category, sortType, searchTerm]);
-  
+
   const handleSortChange = (event) => {
     setSortType(event.target.value);
   };

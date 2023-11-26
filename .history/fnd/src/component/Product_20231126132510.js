@@ -48,7 +48,9 @@ const Product = () => {
     if (category || category === "") {
       url += `?category=${category}`;
     }
-    
+    if (category || category === "") {
+      url += `?category=${catLink}`;
+    }
     if (sortType === "priceAsc") {
       url += "&sort=price";
     } else if (sortType === "priceDesc") {
