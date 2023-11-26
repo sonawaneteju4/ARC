@@ -82,7 +82,7 @@ const Product = () => {
             />
           </div>
           <hr className="m-1"/>
-          <div className="flex justify-end  relative items-center ">
+          <div className="flex justify-end w relative items-center ">
             <SearchButton onChange={(e) => setSearchTerm(e.target.value)}  />
             {/* <input
               type="search"
