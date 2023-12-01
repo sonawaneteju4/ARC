@@ -12,8 +12,6 @@ import { GiHomeGarage } from "react-icons/gi";
 import { HiMenu } from "react-icons/hi";
 import { RxCross1 } from "react-icons/rx";
 
-import Cart from "./Cart";
-// import { Bars3Icon } from '@heroicons/react/24/outline'
 
 const Navbar = () => {
   const [mobileDisplay, setmobileDisplay] = useState(false);
@@ -129,7 +127,7 @@ const Navbar = () => {
                   Gallery
                 </Link>
               </li>
-              <li className="m-3 flex ">
+              {/* <li className="m-3 flex ">
                 <span className=" m-1 text-xl">
                   <BsFillSave2Fill />
                 </span>
@@ -141,8 +139,8 @@ const Navbar = () => {
                 >
                   Get Qoutes
                 </Link>
-              </li>
-              <li className="m-3 flex ">
+              </li> */}
+              {/* <li className="m-3 flex ">
                 <span className=" m-1 text-xl">
                   <FcAbout />
                 </span>
@@ -154,7 +152,7 @@ const Navbar = () => {
                 >
                   Blogs
                 </Link>
-              </li>
+              </li> */}
               <li className="m-3 flex ">
                 <span className=" m-1 text-xl">
                   <BiPaperPlane />
@@ -175,7 +173,6 @@ const Navbar = () => {
           </div>
         </div>
 
-        {/* section login serch and cart */}
         <div className="">
           <ul className="text-white order-first flex">
             <li className="m-3 flex hover:text-xl">

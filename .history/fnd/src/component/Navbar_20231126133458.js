@@ -2,7 +2,6 @@ import React, { useEffect, useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { BsBox } from "react-icons/bs";
 import { AiOutlineUser } from "react-icons/ai";
-import { FiSearch } from "react-icons/fi";
 import { FiShoppingCart } from "react-icons/fi";
 import { BsGear } from "react-icons/bs";
 import { TfiGallery } from "react-icons/tfi";
@@ -13,8 +12,6 @@ import { GiHomeGarage } from "react-icons/gi";
 import { HiMenu } from "react-icons/hi";
 import { RxCross1 } from "react-icons/rx";
 
-import Cart from "./Cart";
-// import { Bars3Icon } from '@heroicons/react/24/outline'
 
 const Navbar = () => {
   const [mobileDisplay, setmobileDisplay] = useState(false);
@@ -130,7 +127,7 @@ const Navbar = () => {
                   Gallery
                 </Link>
               </li>
-              <li className="m-3 flex ">
+              {/* <li className="m-3 flex ">
                 <span className=" m-1 text-xl">
                   <BsFillSave2Fill />
                 </span>
@@ -142,7 +139,7 @@ const Navbar = () => {
                 >
                   Get Qoutes
                 </Link>
-              </li>
+              </li> */}
               <li className="m-3 flex ">
                 <span className=" m-1 text-xl">
                   <FcAbout />
@@ -176,7 +173,6 @@ const Navbar = () => {
           </div>
         </div>
 
-        {/* section login serch and cart */}
         <div className="">
           <ul className="text-white order-first flex">
             <li className="m-3 flex hover:text-xl">
@@ -195,7 +191,7 @@ const Navbar = () => {
                   className={`  ${
                     location.pathname === "/login" ? "text-sky-500" : ""
                   }  `}
-                  to="/user"
+                  to="/login"
                 >
                   <AiOutlineUser />
                 </Link>

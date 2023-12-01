@@ -110,7 +110,7 @@ const TopNavbar = () => {
         </div>
       </div>
       {sideBar && (
-        <div className="fixed top-0 right-0 left-full z-40 w-[50%] h-screen overflow-y-auto transition-transform -translate-x-full bg-white/80   backdrop-sepia-0  backdrop-blur-sm drop-shadow-xl">
+        <div className="fixed top-0 right-0 left-full z-40 w-[50%] h-screen overflow-y-auto transition-transform -translate-x-full bg-white/60 m-3 p-3 rounded-xl backdrop-sepia-0  backdrop-blur-sm drop-shadow-xl">
           <div className="flex justify-between items-center text-2xl h-16 p-4">
             <div>
               {" "}

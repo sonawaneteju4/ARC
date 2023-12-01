@@ -127,7 +127,7 @@ const Navbar = () => {
                   Gallery
                 </Link>
               </li>
-              <li className="m-3 flex ">
+              {/* <li className="m-3 flex ">
                 <span className=" m-1 text-xl">
                   <BsFillSave2Fill />
                 </span>
@@ -139,8 +139,8 @@ const Navbar = () => {
                 >
                   Get Qoutes
                 </Link>
-              </li>
-              <li className="m-3 flex ">
+              </li> */}
+              {/* <li className="m-3 flex ">
                 <span className=" m-1 text-xl">
                   <FcAbout />
                 </span>
@@ -152,7 +152,7 @@ const Navbar = () => {
                 >
                   Blogs
                 </Link>
-              </li>
+              </li> */}
               <li className="m-3 flex ">
                 <span className=" m-1 text-xl">
                   <BiPaperPlane />
