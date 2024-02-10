@@ -9,8 +9,11 @@ import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
-    <div >
-      <footer  style={{ backgroundImage: `url("/image/mainbgg.jpg")` }} className="top-full bottom-0 left-0 w-full md:px-1 md:py-1">
+    <div>
+      <footer
+        // style={{ backgroundImage: `url("/image/mainbgg.jpg")` }}
+        className="top-full bottom-0 left-0 w-full md:px-1 md:py-1 bg-black/90"
+      >
         <div className="flex flex-row">
           <div className="basis-1/3 mt-2">
             <h1 className="text-center font-bold text-white font-serif">
@@ -74,18 +77,14 @@ const Footer = () => {
         </div>
 
         <hr className=""></hr>
-        <div className="pt-1 font-mono font-thin text-center text-white">&copy; 2023 Copyright: <span className="text-slate-200">
-          AR COUSTOMS  </span>
-            | Devloped By    
-        <span className="text-sky-400 px-2 underline">
-          <a href="Devloper">
-        Tejas Sonawane
-          </a>
-        </span>
+        <div className="pt-1 font-mono font-thin text-center text-white">
+          &copy; 2023 Copyright:{" "}
+          <span className="text-slate-200">AR COUSTOMS </span>| Devloped By
+          <span className="text-sky-400 px-2 underline">
+            <a href="Devloper">Tejas Sonawane</a>
+          </span>
         </div>
       </footer>
-
-    
     </div>
   );
 };

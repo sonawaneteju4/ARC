@@ -16,7 +16,7 @@ const Location = () => {
             <div className="grid lg:grid-cols-2 gap-12  items-center">
               <div className="lg:mt-0">
                 <h1
-                  className="text-5xl md:text-6xl xl:text-7xl font-bold tracking-tight mb-12"
+                  className="text-5xl h-40 md:text-6xl xl:text-7xl font-bold tracking-tight mb-12"
                   // style={{ color: "hsl(218, 81%, 95%)" }}
                 >
                   Direction <br />

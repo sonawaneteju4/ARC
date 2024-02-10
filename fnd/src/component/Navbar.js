@@ -113,7 +113,7 @@ const Navbar = () => {
                   Services
                 </Link>
               </li>
-              <li className="m-3 flex ">
+              {/* <li className="m-3 flex ">
                 <span className=" m-1 text-xl">
                   <TfiGallery />
                 </span>
@@ -126,7 +126,7 @@ const Navbar = () => {
                   {" "}
                   Gallery
                 </Link>
-              </li>
+              </li>  */}
               {/* <li className="m-3 flex ">
                 <span className=" m-1 text-xl">
                   <BsFillSave2Fill />
@@ -262,7 +262,7 @@ const Navbar = () => {
                     <span className=" m-1 text-xl">
                       <TfiGallery />
                     </span>
-                    <Link
+                    {/* <Link
                       to="/gallery"
                       className={`  ${
                         location.pathname === "/gallery" ? "text-sky-500" : ""
@@ -270,7 +270,7 @@ const Navbar = () => {
                     >
                       {" "}
                       Gallery
-                    </Link>
+                    </Link> */}
                   </li>
                   <li className="m-3 flex ">
                     <span className=" m-1 text-xl">

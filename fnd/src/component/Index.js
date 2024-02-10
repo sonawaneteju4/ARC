@@ -48,23 +48,23 @@ const Index = () => {
         </div>
 
         <div className=" pb-5 rounded-2xl mx-0">
-          <span className="lg:text-5xl text-3xl flex justify-center font-bold p-10">
+          {/* <span className="lg:text-5xl text-3xl flex justify-center font-bold p-10">
             <FcServices style={{ color: "dodgerblue" }} />
             <span style={{ color: "dodgerblue" }}>Services</span>
-          </span>
+          </span> */}
           {/* Services */}
           {/* <ServicesIndex /> */}
 
-          <div className="mx-10">
+          {/* <div className="mx-10">
             <ServiceCarsoul slides={slides} />
-          </div>
+          </div> */}
         </div>
 
-        <div className="pb-5 pt-5  lg:flex lg:flex-row">
-          <div className="lg:basis-2/5 lg:w-2/5 bg-white pb-5 mx-5 pt-5 ">
+        <div className="pb-5 pt-5 ">
+          <div className=" bg-white pb-5 mx-5 pt-5 ">
             <Revies />
           </div>
-          <div className="lg:basis-3/5 lg:w-3/5 bg-white mx-5 pt-5 pb-5">
+          <div className=" bg-white mx-5 pt-5 pb-5">
             <GoogleReviews />
           </div>
         </div>

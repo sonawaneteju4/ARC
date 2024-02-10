@@ -49,7 +49,7 @@ const Index = () => {
     // alert('You Are LogOut Now')
   };
   return (
-    <div className="mt-16 mb-5">
+    <div className="mt-16 mb-5 h-screen">
       {Loading && <Spinner isHomePage={true} />}
       <div className="grid grid-cols-2 bg-white" >
         <div className="px-5 ">
@@ -63,7 +63,7 @@ const Index = () => {
       <hr></hr>
       <div className="flex lg:flex-row flex-col">
         <div className="basis-1/4 m-2   rounded-2xl">
-          <Link to="/">
+          <Link to="/user">
             <img
               src="/image/admin.png"
               className="h-36 block ml-auto mr-auto imgShadow "
@@ -85,7 +85,7 @@ const Index = () => {
         </Link>
           </div>
           <div className="basis-1/4 m-2">
-        <Link to="/">
+        <Link>
             <img
               className="h-40 block ml-auto mr-auto imgShadow"
               src="/image/qt.png"
@@ -95,7 +95,7 @@ const Index = () => {
         </Link>
           </div>
           <div className="basis-1/4 m-2">
-        <Link to="/admin/adminHome">
+        <Link>
             <img
               className="h-40 block ml-auto mr-auto imgShadow"
               src="/image/so.png"
@@ -108,12 +108,12 @@ const Index = () => {
           </div>
       </div>
       <hr />
-      <div className=" mt-5">
+      {/* <div className=" mt-5">
         <h1 className="text-4xl text-center my-5 font-extrabold">
           Book Service
         </h1>
         <ServicesIndex />
-      </div>
+      </div> */}
     </div>
   );
 };
